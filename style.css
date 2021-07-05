@@ -1,105 +1,120 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
-}
-.banner{
-    width: 100%;
-    height: 100vh;
-    background-image: url(studyi1.jpg);
+    background-image: url(bg\ img-2.jpg);
     background-size: cover;
-    background-position: center;
-    position: relative;
-}
+    background-attachment: fixed;
+    
 
-.navbar{
-    width: 85%;
-    margin: auto;
-    padding: 20px 0;
+}
+header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.logo{
-    font-weight: 500;
-    cursor: pointer;
-    color: white;
-    letter-spacing: .5em;
-}
-
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-
-.navbar ul li a{
+p, li, a{
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
 }
-.navbar ul li ::after{
-    content: "";
-    height: 3px;
-    width: 0;
-    background: rgb(69, 1, 255);
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    transition: 0.5s;
+.logo{
+    font-weight: 900;
+    font-size: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    letter-spacing: .5em;
 }
-.navbar ul li :hover::after{
+.nav-link li{
+    list-style: none;
+    display: inline-block;
+}
+.nav-link li a{
+    margin: 0 15px;
+    transition: all .3s ease;
+}
+.nav-link li a:hover{
+    color: lawngreen;
+}
+
+.container{
     width: 100%;
-}
-.content{
-    width: 100%;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top:30%;
+    transform: -50%;
     text-align: center;
-    color: white;
+    color: rgb(0, 240, 60);
 }
-.content h1{
+.container h1{
     font-size: 50px;
     margin-top: 90px;
 }
-
-.content p{
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
+.socialmedia{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-button{
-    width: 200px;
-    padding: 15px 0;
+ .socialmedia a{
+    background-color: rgb(56, 238, 0);
+    width: 90px;
+    height: 90px;
+    border-radius: 35px;
     text-align: center;
-    margin: 10px 10px;
-    border-radius: 20px;
-    font-weight: bold;
-    border: 2px solid #009688;
-    background: transparent;
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+    line-height: 100px;
+    box-shadow: 1px 4px 2px 2px black;
+    margin: 10px;
 }
-span{
-    background: #009688;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: .5s;
+a, i{
+    transition: all .3s linear;
 }
-button:hover span{
-    width: 100%;
-}
-button:hover{
-    border: none;
+a:hover i{
+    transform: scale(1.5);
 }
 
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-whatsapp{
+    color: #075e54 ;
+}
+.fa-youtube{
+    color: #c4302b;
+}
+.fa-twitter{
+    color: #00acee ;
+}
+.fa-instagram{
+    color: #3f729b;
+}
+
+ h1{
+    text-align: center;
+    color: chartreuse;
+
+}
+.filelink{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filelink a{
+    color: rgb(56, 238, 0);
+    
+
+    width: 100px;
+    height: 100px;
+    border-radius: 0px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 1px 4px 2px  black;
+    margin: 20px;
+}
+
+a:hover{
+    color: cyan;
+}
+a:active{
+    color: yellow;
+}
